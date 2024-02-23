@@ -1,0 +1,17 @@
+body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h1 {color: crimson;}
+h2 {color: coral;}
+h3 {color: darkmagenta;}
+
+.evenrow {background-color: powderblue;}
+.bold {font-weight: bold;}
+
+h1 {font-size: 6em;}
+h2 {font-size: 4em;}
+h3 {font-size: 2em;}
+
+caption {font-size: 2em;}
+
+h1 {line-height: 0.2;}
+h2 {line-height: 0.2;}
+h3 {line-height: 0.2;}
