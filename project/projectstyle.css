@@ -1,0 +1,90 @@
+/* all page format */
+
+#header {background-color: #FF9BD2;}
+.header {display: flex;
+    justify-content: space-between;
+}
+
+#header h1 {font-size: 3em;
+    margin: 20%;
+}
+
+#header nav {font-size: 1em;
+    margin: 2.5%;
+}
+
+#footer {background-color: #FF9BD2;}
+.footer {display: flex;
+    justify-content: space-around;
+}
+
+body {background-color: #F8F4EC;
+    color: #402B3A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a, nav {color: #402B3A;}
+
+a:hover, nav:hover {color: #D63484;}
+
+
+
+
+/* home page */
+.title {font-size: 2em;
+    margin: 2%;
+}
+
+.homegallery img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5%;
+}
+
+.textcenter {text-align: center;}
+
+.border {background-color: #FF9BD2;
+    border: 3px solid #D63484;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.homesophie img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 5%;
+}
+
+
+/* this is the flexbox for the girls homepage click pics */
+.homeflex1 {display: flex;
+    justify-content: space-around;
+}
+.homeflex1 div {flex: 1;}
+.homeflex1 img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 5%;
+}
+
+.homeflex2 {display: flex;
+    justify-content: space-around;
+}
+.homeflex2 div {flex: 1;}
+.homeflex2 img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 5%;
+}
+
+
+/* footer */
+
+#footer h3 {margin: 2%;}
+
+
