@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Hamburger Menu</title>
+    <style>
+        nav {background-color: #ff5395;}
+        a {margin: 5px;
+            padding: 15px;
+        }
+        #hamicon {width: 40px;}
+
+        #hamicon {display: none;}
+        #close {display: none;}
+        @media only screen and (max-width: 800px) {
+            #hamicon {display: block;}
+            #close {display: block;}
+            a {border: 1px solid black;
+                display: block; /* a element changes links to block which makes them take up full width of the screen */
+            } 
+            #navlinks {display: none;}
+            .row {display: flex;
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        <img id="hamicon" onclick="showNav();" src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>The Hamburger Menu</h1>
+        <h3>CSS</h3>
+            <ol>
+                <li>Desktop View - no hamburger menu</li>
+                <li>Mobile View - hamburger menu</li>
+                <li>Larger - no X</li>
+                <li>Smaller - show X</li>
+                <li>Larger - show links side by side</li>
+                <li>Smaller - stack links </li>
+                <li>Smaller - links initially hidden</li>
+            </ol>
+        <h3>JavaScript</h3>
+            <ol>
+                <li>Click on Hamburger to show links</li>
+                <li>Click on the X to hide links</li>
+            </ol>
+</body>
+</html>

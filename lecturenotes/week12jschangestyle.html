@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Change Style</title>
+    <script>
+        function changeColor () {
+            document.getElementById("thepage").style.backgroundColor = document.getElementById("picker").value;
+        }
+    </script>
+</head>
+<body id="thepage">
+    <h1>Change Style</h1>
+        <h3>Changing the style of the webpage.</h3>
+
+        <form>
+            <input id="picker" onchange="changeColor();" type="color">
+        </form>
+
+</body>
+</html>
