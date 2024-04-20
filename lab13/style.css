@@ -1,0 +1,90 @@
+/* Body background color-#2E0249
+Text color-#F05941
+Link color-#B8F1B0
+Heading color-h1(#DC143C), h2(#FF7746), h3(#E90064)
+Site Navigation Background-#0002A1
+Site Navigation Highlight Color-#F5EA5A
+Site Navigation Link Color-#B8F1B0
+*/
+
+body {background-color: #2E0249;}
+
+body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+h1 {color: #dc143c;}
+h2 {color: #ff7746;}
+h3 {color: #E90064;}
+
+p, label, ol, dl, table {color: #F05941;}
+
+a, nav {color: #B8F1B0;}
+
+a:hover {color: #F5EA5A;}
+nav:hover {color: #F5EA5A;}
+
+.evenrow {background-color: #480032;}
+.oddrow {background-color: #3d062d;}
+.bold {font-weight: bold;}
+
+h1 {font-size: 6em;}
+h2 {font-size: 4em;}
+h3 {font-size: 2em;}
+
+caption {font-size: 2em;}
+
+h1 {line-height: 0.2;}
+h2 {line-height: 0.2;}
+h3 {line-height: 0.2;}
+
+nav {background-color: #0002A1;
+    border: 3px solid #B8F1B0;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav {font-size: 2em;}
+
+img {background-color: #3d062d;
+    border: 2px solid #480032;
+    padding: 10px;
+    margin: 10px;
+}
+
+iframe {background-color: #3d062d;
+    border: 2px solid #480032;
+    padding: 10px;
+    margin: 10px;
+}
+
+form {background-color: #3d062d;
+    border: 2px solid #480032;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {max-width:100;}
+    nav a {display:block;}
+    span {display:none;}
+    nav a {padding:1%;}
+}
+
+@media only screen and (max-width: 600px) {
+    h1, h2, h3 {white-space: nowrap;}
+    h1 {font-size: 3em;}
+    h2 {font-size: 2em;}
+    h3 {font-size: 1em;}
+}
+
+.skip {
+    background-color: #3d062d;
+    color: #B8F1B0;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid #ff7746;
+    position: absolute;
+    top: 10px;
+    left: -999px; /* push off left side of browser */
+}
+.skip:focus {left: 10px;
+}

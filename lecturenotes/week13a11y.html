@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A11y</title>
+    <style>
+        /* dont forget the code within the HTML! the bookmark link and where the bookmark link goes too */
+        .skip {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 8px;
+            text-decoration: none;
+            border: 2px solid #663399;
+            position: absolute;
+            top: 10px;
+            left: -999px; /* push off left side of browser */
+        }
+        .skip:focus {left: 10px;}
+    </style>
+</head>
+<body>
+    <!-- tab order is for complex website with a lot of stuff -->
+    <nav>
+        <a href="#skip"class="skip" tabindex="1">Skip to Content</a><br>
+
+        <a href="http://www.syracuse.com" tabindex="3">Syracuse</a><br>
+        <a href="http://www.syracuse.edu" tabindex="4">Syracuse University</a><br>
+        <a href="http://www.https://newhouse.syracuse.edu/" tabindex="2">Newhouse</a><br>
+    </nav>
+    <h1>Accessibility, HTML, & CSS</h1>
+        <p id="skip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quod nemo rerum dolorum non autem labore magnam eum, veniam blanditiis nobis consequatur corrupti facere aut necessitatibus cum temporibus repellat velit.</p>
+        <p>Use the <a href="https://wave.webaim.org/">WAVE</a> Accessibility website check! </p>
+</body>
+</html>
