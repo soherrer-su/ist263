@@ -1,90 +1,213 @@
 /* all page format */
 
-#header {background-color: #FF9BD2;}
-.header {display: flex;
-    justify-content: space-between;
-}
+    body {
+        background-color: #F8F4EC;
+        color: #402B3A;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-#header h1 {font-size: 3em;
-    margin: 20%;
-}
+    a, nav {color: #402B3A;}
 
-#header nav {font-size: 1em;
-    margin: 2.5%;
-}
-
-#footer {background-color: #FF9BD2;}
-.footer {display: flex;
-    justify-content: space-around;
-}
-
-body {background-color: #F8F4EC;
-    color: #402B3A;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a, nav {color: #402B3A;}
-
-a:hover, nav:hover {color: #D63484;}
+    a:hover, nav:hover {color: #D63484;}
 
 
+/* header */
 
+    #header {background-color: #FF9BD2;}
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
 
-/* home page */
-.title {font-size: 2em;
-    margin: 2%;
-}
+    #header h1 {
+        font-size: 3em;
+        margin: 20%;
+    }
 
-.homegallery img {display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 5%;
-}
-
-.textcenter {text-align: center;}
-
-.border {background-color: #FF9BD2;
-    border: 3px solid #D63484;
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.homesophie img {display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    border-radius: 5%;
-}
-
-
-/* this is the flexbox for the girls homepage click pics */
-.homeflex1 {display: flex;
-    justify-content: space-around;
-}
-.homeflex1 div {flex: 1;}
-.homeflex1 img {display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    border-radius: 5%;
-}
-
-.homeflex2 {display: flex;
-    justify-content: space-around;
-}
-.homeflex2 div {flex: 1;}
-.homeflex2 img {display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    border-radius: 5%;
-}
+    #header nav {
+        font-size: 1em;
+        margin: 2.5%;
+    }
 
 
 /* footer */
 
-#footer h3 {margin: 2%;}
+    #footer {background-color: #FF9BD2;}
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footer h3 {margin: 2%;}
+
+
+/* home page */
+
+    .title {
+        font-size: 2em;
+        margin: 2%;
+    }
+
+    .homegallery img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 5%;
+    }
+
+    .textcenter {text-align: center;}
+
+    .border {
+        background-color: #FF9BD2;
+        border: 3px solid #D63484;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .homesophie img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        border-radius: 5%;
+    }
+
+    /* this is the flexbox for the girls homepage click pics */
+    .homeflex1 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .homeflex1 div {flex: 1;}
+    .homeflex1 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        border-radius: 5%;
+    }
+
+    .homeflex2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .homeflex2 div {flex: 1;}
+    .homeflex2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        border-radius: 5%;
+    }
+
+
+/* FORMAT 1 */
+/* sophies page / allys page / dianas page */
+
+    .format1img {
+        float: left;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .clearfloat {clear: both;}
+
+    .format1box {
+        background-color: #ffe4c4;
+        border: 2px solid #c9238c;
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .format1facts {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    /* justify-content: space-around; 
+    
+    .format1food, .format1obbies, .format1fact {
+        flex: 1;
+        padding: 5px;
+    }
+    
+    */
+
+    .format1songs {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .format1info {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .format1films{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px 20px 0px;
+    }
+
+
+/* FORMAT 2 */
+/* reenies page / kylies page / graces page */
+
+    .format2flex {
+        display: flex;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .format2abt {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .format2food, .format2hobbies, .format2fact {
+        flex: 1;
+        padding: 5px;
+    }
+
+    .format2box {
+        background-color: #ffe4c4;
+        border: 2px solid #c9238c;
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .format2img {
+        float: left;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .format2songs {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .format2films {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .format2info {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
