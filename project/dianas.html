@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana Stone</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <style>
-        img {width: 15%;}
-    </style>
+    <script src="projectscript.js"></script>
 </head>
 <body>
-    <header id="header">
+    <header id="header"> 
         <div class="header">
             <div><h1>ATE24</h1></div>
             <nav>
@@ -25,10 +23,46 @@
             </nav>
         </div>    
         <hr>
-    </header>    
+    </header>   
         <h2 class="title">Diana Stone!</h2>
 
-    <img src="media/diana3.jpg" alt="diana at 1911" class="format1img">
+    <div class="slideshow-container">
+        <!-- slide 1 -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="media/diana2.JPG" alt="diana">
+        </div>
+
+        <!-- slide 2 -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="media/diana1.jpg" alt="diana">
+        </div>
+
+        <!-- slide 3 -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="media/diana3.jpg" alt="diana">
+        </div>
+
+        <!-- slide 4 -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="media/diana4.jpg" alt="diana">
+        </div>
+        
+        <!-- clicking buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- dots of images -->
+        <div style="text-align:center">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+        </div>
+    </div>
 
     <main>
         <h1>Hi I'm Diana!</h1>
@@ -41,7 +75,7 @@
             </p>
     </main>
 
-    <div class="clearfloat"></div>
+    <div class="clearfloat"></div><br>
 
     <section>
         <div class="format1box">
@@ -53,21 +87,19 @@
         </div>
 
         <div class="format1facts">
-            <div>
+            <div class="food1">
                 <h4>Favorite Food:</h4>
-                    <ul>
-                        <li>"I love any kind of seafood, but my dad makes shrimp and grills it in hamburger juice and then puts the hamburger spice on top, and that's probably my favorite food ever!"</li>
-                    </ul>   
+                    <p class="textcenter">"I love any kind of seafood, but my dad makes shrimp and grills it in hamburger juice and then puts the hamburger spice on top, and that's probably my favorite food ever!"</p>
             </div>
             
-            <div>
+            <div class="fact1">
                 <h4>Fun Fact!</h4>
                     <p>
                         Diana can play the harmonica!
                     </p>
             </div>
 
-            <div>
+            <div class="hobbie1">
                 <h4>Hobbies:</h4>
                     <ul>
                         <li>Bills Podcasts</li>
@@ -81,12 +113,12 @@
     <figure>
         <div class="format1songs">
             <div>
-                Favorite Song: Scenes From an Italian Restaurant - Billy Joel<br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/izzM9LXqP-U?si=GBN-LDgx-wIwRPCF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>Scenes From an Italian Restaurant - Billy Joel</strong><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/izzM9LXqP-U?si=GBN-LDgx-wIwRPCF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
             <div>
-                Go to Kareoke Song: Just Give Me a Reason - P!NK<br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OpQFFLBMEPI?si=LaowELfkVUZX-PID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Go to Karaoke Song: <strong>Just Give Me a Reason - P!NK</strong><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OpQFFLBMEPI?si=LaowELfkVUZX-PID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
         </div>
     </figure>
@@ -98,8 +130,8 @@
 
         <div class="format1info">
             <div>
-                <p>
-                    What makes you happy? “SO many little things make me happy, there's no way I can fit everything in for this question. I'll just list what comes to mind: tea, reading a good book, waking up before everyone else, spending time with my family and friends, a gin and tonic with a lime!, live music, tailgating, hugs, sitting on the porch, making friends with strangers, seeing other people do things that make them happy, little kids, grandparents, a good museum, doing things just to "see what they are," candles, clean bed sheets, oh I could go on forever...”<br> 
+                <p class="textcenter">
+                    <strong>What makes you happy?</strong> “SO many little things make me happy, there's no way I can fit everything in for this question. I'll just list what comes to mind: tea, reading a good book, waking up before everyone else, spending time with my family and friends, a gin and tonic with a lime!, live music, tailgating, hugs, sitting on the porch, making friends with strangers, seeing other people do things that make them happy, little kids, grandparents, a good museum, doing things just to "see what they are," candles, clean bed sheets, oh I could go on forever...”<br> 
                     
                     Diana's favorite childhood memory is playing outside with her next-door neighbor Macy every day.<br>
                     
@@ -123,14 +155,14 @@
         </div>
 
         <div class="format1films">
-            <div>
+            <div class="format1tv">
                 <h4>Top Shows:</h4>
                 <ol>
                     <li>The Twilight Zone</li>
                     <li>The Office</li>
                 </ol>
             </div>
-            <div>
+            <div class="format1movies">
                 <h4>Top Movies:</h4>
                 <ol>
                     <li>The Shawshank Redemption</li>

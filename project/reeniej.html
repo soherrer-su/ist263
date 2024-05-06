@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reenie James</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <style>
-        img {width: 30%;}
-    </style>
-</head>
+    <script src="projectscript.js"></script>
+</head> 
 <body>
+    <div class="row">
+        <img id="hamicon" onclick="showNav();" src="media/hamicon.png" alt="hamburger icon">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
     <header id="header">
         <div class="header">
             <div><h1>ATE24</h1></div>
-            <nav>
+            <a href="#skip"class="skip" tabindex="1">Skip to Content</a>
+            <nav id="navlinks">
                 <a href="homepage.html">Home</a> | 
                 <a href="sophieh.html">Sophie Herrera</a> | 
                 <a href="reeniej.html">Reenie James</a> | 
@@ -28,7 +31,7 @@
     </header>    
         <h2 class="title">Reenie James!</h2>
 
-    <main>
+    <main id="skip">
         <div class="format2flex">
             <div>
                 <h1>Hi I'm Reenie!</h1>
@@ -71,23 +74,80 @@
                         <p>
                             Their dream career is working in the U.S. Parks Service and traveling to all of the National/ State Parks! Reenie enjoys the ability to educate themselves, and the public on environmental facts and information!<br>
                             Reenie is native to Buffalo, New York. They are of a mixed heritage and the most inspiring people in their life are their mom and their aunt Ali.
-                        </p>
+                        </p><br>
                 </div>
             </aside>
         </div>
     </main>
 
-    <img src="media/reenie6.jpg" alt="reenie with starfish" class="format2img">
+    <div class="slideshow-container2">
+        <!-- slide 1 -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="media/reenie4.JPG" alt="reenie">
+        </div>
+
+        <!-- slide 2 -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="media/reenie2.jpg" alt="reenie">
+        </div>
+
+        <!-- slide 3 -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="media/reenie3.jpg" alt="reenie">
+        </div>
+
+        <!-- slide 4 -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="media/reenie1.jpg" alt="reenie">
+        </div>
+
+        <!-- slide 5 -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="media/reenie5.jpg" alt="reenie">
+        </div>
+
+        <!-- slide 6 -->
+        <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="media/reenie6.jpg" alt="reenie">
+        </div>
+
+        <!-- slide 7 -->
+        <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="media/reenie7.jpg" alt="reenie">
+        </div>
+        
+        <!-- clicking buttons -->
+        <a class="prev2" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next2" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- dots of images -->
+        <div style="text-align:center">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+            <span class="dot" onclick="setSlide(4)"></span>
+            <span class="dot" onclick="setSlide(5)"></span>
+            <span class="dot" onclick="setSlide(6)"></span>
+        </div>
+    </div>
 
     <figure>
         <div class="format2songs">
             <div>
-                Favorite Song: Florida - Dominic Fike<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/WcShgKQTLIs?si=cD4LF3l6EMzvXunS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>Florida - Dominic Fike</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/WcShgKQTLIs?si=cD4LF3l6EMzvXunS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
             <div>
-                Go to Kareoke Song: Moment4Lyfe - Nicki Minaj<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/Ks3_kuRAzHs?si=KT3EjfdDxF1n1Pt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Go to Karaoke Song: <strong>Moment4Lyfe - Nicki Minaj</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/Ks3_kuRAzHs?si=KT3EjfdDxF1n1Pt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
         </div>
     </figure>
@@ -124,8 +184,9 @@
 
         <div class="format2info">
             <div>
-                <p>
-                    What makes you happy? “My partner, mom, brother, aunt, and my cat Angel!"<br> 
+                <p class="textcenter">
+                    <strong>What makes you happy?</strong> “My partner, mom, brother, aunt, and my cat Angel!"<br>
+
                     Reenie's favorite childhood memory is going to the Virgin Islands with their family.<br>
 
                     Their favorite activity to do outside of school is to go on nature walks!<br>

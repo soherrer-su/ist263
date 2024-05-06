@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kylie Chartier</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <style>
-        img {width: 30%;}
-    </style>
+    <script src="projectscript.js"></script>
 </head>
 <body>
     <header id="header">
@@ -35,7 +33,7 @@
                     <p>Majors in Early Childhood & Childhood Education at SUNY Cortland!</p>
                     <ul>
                         <li>Kylie choose her major because she “loves making a connection with kids. I want to be their support system when they might not get it at home!”</li>
-                        <li>What brough Kylie to Cortland was that she “transferred from Murray State University to ESF to be closer to my boyfriend at the time. After we broke up I wanted to leave ESF but stayed in Syracuse because of the people I met and the impact they had on me.”</li>
+                        <li>What brough Kylie to Cortland was that she “transferred from Murray State University to ESF. I ended up transgerring to Cortland but stayed in Syracuse because of the people I met and the impact they had on me.”</li>
                     </ul>
 
                 <div class="format2abt">
@@ -70,28 +68,93 @@
                     <h3>About Kylie Chartier (she/her)</h3>
                         <p>
                             Kylie's dream career is to lay on the beach all day drinking espresso martinis!<br>
-                            Kylie is from Livonia, New York, she is of white heritage. The most inspiring person in her life is her mom. “She is the woman I aspire to be. My mom is my best friend, the most trust worthy person, and a badass. She stands up for herself and what she believes me. My mom has always gone above and beyond for what she does for her family. When she is determined she will never back down until she reaches her goals. She inspires me everyday to be kind but fierce and never take shit. (To mom: I love you).” 
-                        </p>
+                            Kylie is from Livonia, New York, she is of white heritage. The most inspiring person in her life is her mom. “She is the woman I aspire to be. My mom is my best friend, the most trust worthy person, and a badass. She stands up for herself and what she believes in. My mom has always gone above and beyond for what she does for her family. When she is determined she will never back down until she reaches her goals. She inspires me everyday to be kind but fierce and never take shit.<br>
+                            (To mom: I love you!)” 
+                        </p><br>
                 </div>
             </aside>
         </div>
     </main>
 
-    <img src="media/kylie3.jpg" alt="kylie serving face" class="format2img">
+    <div class="slideshow-container">
+        <!-- slide 1 -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="media/kylie7.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 2 -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="media/kylie2.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 3 -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="media/kylie3.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 4 -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="media/kylie4.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 5 -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="media/kylie5.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 6 -->
+        <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="media/kylie6.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 7 -->
+        <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="media/kylie1.jpg" alt="kylie">
+        </div>
+
+        <!-- slide 8 -->
+        <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="media/kylie8.jpg" alt="kylie">
+        </div>
+        
+        <!-- clicking buttons -->
+        <a class="prev2" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next2" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- dots of images -->
+        <div style="text-align:center">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+            <span class="dot" onclick="setSlide(4)"></span>
+            <span class="dot" onclick="setSlide(5)"></span>
+            <span class="dot" onclick="setSlide(6)"></span>
+            <span class="dot" onclick="setSlide(7)"></span>
+        </div>
+    </div>
 
     <figure>
         <div class="format2songs">
             <div>
-                Favorite Song: Violets and Roses - Lana Del Ray<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/wnm5I8DqOPs?si=eZMmY6CKHJ0dr1Se" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>Violets and Roses - Lana Del Ray</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/wnm5I8DqOPs?si=eZMmY6CKHJ0dr1Se" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
             <div>
-                Favorite Song: Time - Pink Floyd<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/yl-Ms_ek-kE?si=SIDO-5osKPbmBg2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>Time - Pink Floyd</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/yl-Ms_ek-kE?si=SIDO-5osKPbmBg2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
             <div>
-                Go to Kareoke Song: Man! I Feel Like A Women! - Shania Twain<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/ZJL4UGSbeFg?si=gaPLv5eAwlL-KfJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Go to Karaoke Song: <strong>Man! I Feel Like A Women! - Shania Twain</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/ZJL4UGSbeFg?si=gaPLv5eAwlL-KfJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
         </div>
     </figure>
@@ -106,7 +169,7 @@
                 <h4>Top Shows:</h4>
                 <ol>
                     <li>Game of Thrones</li>
-                    <li>The Handmaiden Tale</li>
+                    <li>Sex & the City</li>
                     <li>Mind Hunter</li>
                     <li>Revenge</li>
                     <li>American Horror Story</li>
@@ -117,6 +180,7 @@
                 <h4>Top Movies:</h4>
                 <ol>
                     <li>The Departed</li>
+                    <li>Star Wars</li>
                 </ol>
             </div>
         </div>
@@ -125,8 +189,8 @@
 
         <div class="format2info">
             <div>
-                <p>
-                    What makes you happy? “My family. As I went to college, I began valuing them so much more. They have done so much for me whether it's being there when I'm sad or pushing me to be my best!”<br> 
+                <p class="textcenter">
+                    <strong>What makes you happy?</strong> “My family. As I went to college, I began valuing them so much more. They have done so much for me whether it's being there when I'm sad or pushing me to be my best!”<br> 
 
                     Kylie's favorite childhood memory is “being at black lake with my family. All of those time are my favorite. I would go kayaking with my dog Piper. We go out on the boat every night to fish. When I was very young my dad and I would crush snails and let the fish take them from your fingers. Being at black lake was pure bliss and my happy place.”<br>
 
@@ -144,8 +208,6 @@
                 <h4>Favorite Colors:</h4>
                 <ul>
                     <li>Yellow</li>
-                    <li>Blue</li>
-                    <li>Red</li>
                 </ul>
             </div> 
         </div>

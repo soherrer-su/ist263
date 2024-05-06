@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATE24</title>
     <link rel="stylesheet" href="projectstyle.css">
+    <script src="projectscript.js"></script>
     <style>
-        .homegallery {width: 50%;}
+        .homegallery {
+            width: 80%;
+            margin: auto;
+        } 
     </style>
 </head>
 <body>
+    <div class="row">
+        <img id="hamicon" onclick="showNav();" src="media/hamicon.png" alt="hamburger icon">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
     <header id="header">
         <div class="header">
             <div><h1>ATE24</h1></div>
-            <nav>
+            <a href="#skip"class="skip" tabindex="1">Skip to Content</a>
+            <nav id="navlinks">
                 <a href="homepage.html">Home</a> | 
                 <a href="sophieh.html">Sophie Herrera</a> | 
                 <a href="reeniej.html">Reenie James</a> | 
@@ -30,19 +39,19 @@
     
 
     <figure class="homegallery">
-        <img src="media/roomies.jpg" alt="All six roommates of ATE24">
+        <img src="media/roomies.jpg" alt="All six roommates of ATE24"><br>
     </figure>
 
-    <main class="textcenter">
+    <main id="skip" class="textcenter">
         <div class="border">
             <h2>Meet the Roomies!</h2>
                 <p>We are a combination of Syracuse, ESF, and Cortland college students who are going through our crazy schedules and college experiences together!</p>
                 <p>Here at ATE24, we have experienced crazy neighbors, the Euclid freshman crowd rush, and the Mudpit party mishaps! THE RING CAMERA HAS CAPTURED IT ALL. With our karaoke machine, we have singing wine nights, Bill's game party announcements, and even use it to scream at drunk people peeing in our backyard.</p>
-                <p>What's best about living in a house with all different majors and experiences is that there are endless activities for us to do together! We love having the house as a base campground for our friends and family to come over, movie nights, living room study café vibes, and so much more! <br>Get to know us and our favorite activities by clicking on the pictures below!</p>
+                <p>What's best about living in a house with all different majors and experiences is that there are endless activities for us to do together! We love having the house as a base campground for our friends and family to come over, movie nights, living room study café vibes, and so much more! <br>Get to know us and our favorite activities by clicking on the pictures below!</p><br>
         </div>
-    </main>
+    </main><br>
     
-    <figure class="textcenter">
+    <div class="textcenter">
         <div class="homesophie">
             <div>
                 <a href="sophieh.html"><img src="media/sophie3.jpg" alt="sophie at a lake">SOPHIE HERRERA</a>
@@ -52,11 +61,11 @@
         <div class="homeflex1">
             <div>
                 <a href="allya.html"><img src="media/ally1.jpg" alt="allys facecard">ALLY ALMEIDA</a>
-            </div>
+            </div><br>
             <div>
                 <a href="reeniej.html"><img src="media/reenie5.jpg" alt="reenie with hotdog">REENIE JAMES</a>
             </div>
-            <div>
+            <div><br>
                 <a href="kyliec.html"><img src="media/kylie1.jpg" alt="kylie is so cute">KYLIE CHARTIER</a>
             </div>
         </div><br>
@@ -64,15 +73,15 @@
         <div class="homeflex2">
             <div>
                 <a href="graceb.html"><img src="media/grace.jpg" alt="otto or grace?">GRACE BURROWS</a>
-            </div>
+            </div><br>
             <div>
                 <a href="dianas.html"><img src="media/diana4.jpg" alt="go bills!">DIANA STONE</a>
-            </div>
+            </div><br>
             <div>
                 <a href="brontes.html"><img src="media/blue.jpg" alt="pic of blue">BRONTE STAHL</a>
-            </div>
+            </div><br>
         </div>
-    </figure>
+    </div>
 
     <footer id="footer">
         <hr>

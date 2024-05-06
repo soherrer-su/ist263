@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie Herrera</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <style>
-        img {width: 30%;}
-    </style>
+    <script src="projectscript.js"></script>
 </head>
 <body>
+    <div class="row">
+        <img id="hamicon" onclick="showNav();" src="media/hamicon.png" alt="hamburger icon">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
     <header id="header">
         <div class="header">
             <div><h1>ATE24</h1></div>
-            <nav>
+            <a href="#skip"class="skip" tabindex="1">Skip to Content</a>
+            <nav id="navlinks">
                 <a href="homepage.html">Home</a> | 
                 <a href="sophieh.html">Sophie Herrera</a> | 
                 <a href="reeniej.html">Reenie James</a> | 
@@ -28,9 +31,66 @@
     </header>    
         <h2 class="title">Sophie Herrera!</h2>
 
-    <img src="media/sophie4.JPG" alt="sophie eating pizza" class="format1img">
+    <div class="slideshow-container">
+        <!-- slide 1 -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="media/sophie4.JPG" alt="sophie">
+        </div>
 
-    <main>
+        <!-- slide 2 -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="media/sophie1.JPG" alt="sophie">
+        </div>
+
+        <!-- slide 3 -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="media/sophie2.JPG" alt="sophie">
+        </div>
+
+        <!-- slide 4 -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="media/sophie3.jpg" alt="sophie">
+        </div>
+
+        <!-- slide 5 -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="media/sophie5.jpg" alt="sophie">
+        </div>
+
+        <!-- slide 6 -->
+        <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="media/sophie6.jpg" alt="sophie">
+        </div>
+
+        <!-- slide 7 -->
+        <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="media/sophie7.jpg" alt="sophie">
+        </div>
+        
+        <!-- clicking buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- dots of images -->
+        <div style="text-align:center">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+            <span class="dot" onclick="setSlide(4)"></span>
+            <span class="dot" onclick="setSlide(5)"></span>
+            <span class="dot" onclick="setSlide(6)"></span>
+        </div>
+    </div>
+
+    <main id="skip">
         <h1>Hi I'm Sophie!</h1>
             <p>
                 Majors in Television, Radio, & Film in the school of S.I. Newhouse School of Public Communication and minor in Information Management & Technology in the iSchool at Syracuse Univirsity!
@@ -39,15 +99,9 @@
                 Their dream career is working as a film and television producer and working with a nig production team traveling to different places capturing all different stories! Sophie enjoys capturing different perspectives on stories to bring voices to the big screen!<br>
                 Sophie is native to Madison, New Jersey. She comes from a Dominican and Puerto Rican family and finds inspiration from her aunt Letty.            
             </p>
-            <!-- add this too all pages!!! -->
-            <p>
-                Follow my Socials!<br>
-                Instagram: sophiaaiherrera
-                Linkedin: sophiaaiherrera
-            </p>
     </main>
 
-    <div class="clearfloat"></div>
+    <div class="clearfloat"></div><br>
 
     <section>
         <div class="format1box">
@@ -86,18 +140,18 @@
                         <li>Traveling and creating memories</li>
                     </ul>
             </div>
-        </div>
+        </div> 
     </section>
 
     <figure>
         <div class="format1songs">
             <div>
-                Favorite Song: After The Storm - Kali Uches<br>
-                <iframe width="875" height="492" src="https://www.youtube.com/embed/9f5zD7ZSNpQ" title="Kali Uchis - After The Storm ft. Tyler, The Creator, Bootsy Collins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>After The Storm - Kali Uches</strong><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9f5zD7ZSNpQ" title="Kali Uchis - After The Storm ft. Tyler, The Creator, Bootsy Collins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
-            <div>
-                Go to Kareoke Song: What's Up? - FourNonBlondes<br>
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6NXnxTNIWkc?si=KRkRAh10KsKgGCWP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="song-karaoke">
+                Go to Karaoke Song: <strong>What's Up? - FourNonBlondes</strong><br>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6NXnxTNIWkc?si=KRkRAh10KsKgGCWP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
         </div>
     </figure>
@@ -109,8 +163,8 @@
 
         <div class="format1info">
             <div>
-                <p>
-                    What makes you happy? “My partner, my little cousin Victor, my dog Harley, and my kitty Angel!"<br> 
+                <p class="textcenter">
+                    <strong>What makes you happy?</strong> “My partner, my little cousin Victor, my dog Harley, and my kitty Angel!"<br> 
 
                     Sophie's favorite childhood memory is traveling to differnt states with their club volleyball team.<br>
 
@@ -170,7 +224,7 @@
                     <a href="kyliec.html">Kylie Chartier</a><br>
                     <a href="dianas.html">Diana Stone</a><br>
                     <a href="graceb.html">Grace Burrows</a><br>
-                    <a href="brontes.html">Bronte Stahl</a> 
+                    <a href="brontes.html">Bronte Stahl</a>
                 </nav>
                 
                 <div><strong>About The Developer</strong><br>

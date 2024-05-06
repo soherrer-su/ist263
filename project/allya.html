@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ally Almeida</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <style>
-        img {width: 15%;}
-    </style>
+    <script src="projectscript.js"></script>
 </head>
 <body>
     <header id="header">
@@ -28,7 +26,85 @@
     </header>
         <h2 class="title">Ally Almeida!</h2>
 
-    <img src="media/ally6.jpg" alt="ally with pumpkin" class="format1img">
+    <div class="slideshow-container">
+        <!-- slide 1 -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 10</div>
+            <img src="media/ally4.JPG" alt="ally">
+        </div>
+
+        <!-- slide 2 -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 10</div>
+            <img src="media/ally1.jpg" alt="ally">
+        </div>
+
+        <!-- slide 3 -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 10</div>
+            <img src="media/ally2.JPG" alt="ally">
+        </div>
+
+        <!-- slide 4 -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 10</div>
+            <img src="media/ally3.jpg" alt="ally">
+        </div>
+
+        <!-- slide 5 -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="media/ally5.jpg" alt="ally">
+        </div>
+
+        <!-- slide 6 -->
+        <div class="mySlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="media/ally6.jpg" alt="ally">
+        </div>
+
+        <!-- slide 7 -->
+        <div class="mySlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="media/ally7.jpg" alt="ally">
+        </div>
+
+        <!-- slide 8 -->
+        <div class="mySlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="media/ally8.jpg" alt="ally">
+        </div>
+
+        <!-- slide 9 -->
+        <div class="mySlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="media/ally9.jpg" alt="ally">
+        </div>
+
+        <!-- slide 10 -->
+        <div class="mySlides">
+            <div class="numbertext">10 / 10</div>
+            <img src="media/ally10.jpg" alt="ally">
+        </div>
+        
+        <!-- clicking buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- dots of images -->
+        <div style="text-align:center">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+            <span class="dot" onclick="setSlide(4)"></span>
+            <span class="dot" onclick="setSlide(5)"></span>
+            <span class="dot" onclick="setSlide(6)"></span>
+            <span class="dot" onclick="setSlide(7)"></span>
+            <span class="dot" onclick="setSlide(8)"></span>
+            <span class="dot" onclick="setSlide(9)"></span>
+        </div>
+    </div>
 
     <main>
         <h1>Hi I'm Ally!</h1>
@@ -37,11 +113,11 @@
             </p>
             <p>
                 Her dream career is to be an astronaut! "Ultimately one day I would love to do that or anything that involves flying planes. More realistically though, my dream career is anything that I can do with my degree. (But working at NASA would be awesome)."<br>
-                Ally is from Union, New Jerse amd they are of a Hispanic Puerto Rican & Brazilian heritage. The most inspiring person in their life is their mom. “She worked so hard and sacrificed too much to get to where she is today and enjoy life the way she is able to. She has given me the path to continue that and I am more than grateful for that. I hope my kids end up seeing me the same way. (Not in my life, Katherine Johnson)”
+                Ally is from Union, New Jersey amd they are of a Hispanic Puerto Rican & Brazilian heritage. The most inspiring person in their life is their mom. “She worked so hard and sacrificed too much to get to where she is today and enjoy life the way she is able to. She has given me the path to continue that and I am more than grateful for that. I hope my kids end up seeing me the same way. (Not in my life, Katherine Johnson)”
             </p>
     </main>
 
-    <div class="clearfloat"></div>
+    <div class="clearfloat"></div><br>
 
     <section>
         <div class="format1box">
@@ -65,7 +141,7 @@
             <div>
                 <h4>Fun Fact!</h4>
                     <p>
-                        FILL IN FUN FACT
+                        Ally is EXTREMLY double jointed!
                     </p>
             </div>
 
@@ -85,12 +161,12 @@
     <figure>
         <div class="format1songs">
             <div>
-                Favorite Song: Novacane - Frank Ocean<br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/y7aBQjntPLQ?si=T-N1KC1DKQQ8ZDO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>Novacane - Frank Ocean</strong><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y7aBQjntPLQ?si=T-N1KC1DKQQ8ZDO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
             <div>
-                Go to Kareoke Song: Monster - Nicki Minaj<br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VCLGYy04v0k?si=lDOdpl7hbL-mvNr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Go to Karaoke Song: <strong>Monster - Nicki Minaj</strong><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VCLGYy04v0k?si=lDOdpl7hbL-mvNr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
         </div>
     </figure>
@@ -102,8 +178,8 @@
     
         <div class="format1info">
             <div>
-                <p>
-                    What makes you happy? “Being in moments where life just seems easy. Meaning moments where the setting or situation is perfect or fun and I don't have to worry about anything. Or things that make me think and focus (in a positive way of course) like watching my favorite shows, crocheting, listening to music, and eating!”<br> 
+                <p class="textcenter">
+                    <strong>What makes you happy?</strong> “Being in moments where life just seems easy. Meaning moments where the setting or situation is perfect or fun and I don't have to worry about anything. Or things that make me think and focus (in a positive way of course) like watching my favorite shows, crocheting, listening to music, and eating!”<br> 
                     
                     Ally's favorite childhood memory is going to space camp! “Those moments of being a kid and feeling so loved and accepted are still so important to me and are a huge part of where I want my life to go.”<br>
                     
@@ -118,40 +194,49 @@
             </div>
             <div>
                 <h4>Favorite Colors:</h4>
-                <ul>
-                    <li>Purples</li>
-                    <li>Greens</li>
-                    <li>Browns</li>
-                </ul>
+                    <ul>
+                        <li>Purples</li>
+                        <li>Greens</li>
+                        <li>Browns</li>
+                    </ul>
             </div>
         </div>
     
         <div class="format1films">
-            <div>
-                <h4>Top Shows:</h4>
-                <ol>
-                    <li>Modern Family</li>
-                    <li>New Girl</li>
-                    <li>Brooklyn Nine-Nine</li>
-                    <li>Botched</li>
-                    <li>Baby Daddy</li>
-                </ol>
-                <p>
-                    Honestly all easy to watch comedies or reality shows that are ACTUAL reality and funny. I usually watch these shows over and over because it makes me happy and it's a nice distraction. And well, they're funny.
-                </p>
+            <div class="format1tv">
+                <div>
+                    <h4>Top Shows:</h4>
+                    <ol>
+                        <li>Modern Family</li>
+                        <li>New Girl</li>
+                        <li>Brooklyn Nine-Nine</li>
+                        <li>Botched</li>
+                        <li>Baby Daddy</li>
+                    </ol>
+                </div>
+                <div>
+                    <p class="textcenter">
+                        Honestly all easy to watch comedies or reality shows that are ACTUAL reality and funny. I usually watch these shows over and over because it makes me happy and it's a nice distraction. And well, they're funny.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h4>Top Movies:</h4>
-                <ol>
-                    <li>The Nightmare Before Christmas</li>
-                    <li>Coraline</li>
-                    <li>Hidden Figures</li>
-                    <li>Five Nights at Freddy's</li>
-                    <li>The House</li>
-                </ol>
-                <p>
-                    Minus hidden figures, I am one for slightly creepy stories with so much more you can discover with every watch. Sometimes when I rewatch these movies I notice or connect things I never have in the past. In addition, they are all just done so well, they can go so many places and have so many different pasts. For Hidden Figures, Katherine Johnson is a huge inspiration to me, and the movie was INCREDIBLY well done. She is one of the women who paved a path to the present we are living today.
-                </p>
+
+            <div class="format1movies">
+                <div>
+                    <h4>Top Movies:</h4>
+                    <ol>
+                        <li>The Nightmare Before Christmas</li>
+                        <li>Coraline</li>
+                        <li>Hidden Figures</li>
+                        <li>Five Nights at Freddy's</li>
+                        <li>The House</li>
+                    </ol>
+                </div> 
+                <div>
+                    <p class="textcenter">
+                        Minus hidden figures, I am one for slightly creepy stories with so much more you can discover with every watch. Sometimes when I rewatch these movies I notice or connect things I never have in the past. In addition, they are all just done so well, they can go so many places and have so many different pasts. For Hidden Figures, Katherine Johnson is a huge inspiration to me, and the movie was INCREDIBLY well done. She is one of the women who paved a path to the present we are living today.
+                    </p>
+                </div>
             </div>
         </div>
     </section>

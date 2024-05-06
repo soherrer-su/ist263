@@ -10,6 +10,45 @@
 
     a:hover, nav:hover {color: #D63484;}
 
+    @media only screen and (max-width: 1000px) {
+        
+    }
+
+    @media only screen and (min-width: 1001px) {
+        
+    }
+
+    .skip {
+        background-color: #3d062d;
+        color: #B8F1B0;
+        padding: 8px;
+        text-decoration: none;
+        border: 2px solid #ff7746;
+        position: absolute;
+        top: 10px;
+        left: -999px; /* push off left side of browser */
+    }
+    .skip:focus {left: 10px;
+    }
+
+
+    #hamicon {width: 40px;}
+
+        #hamicon {display: none;}
+        #close {display: none;}
+        @media only screen and (max-width: 800px) {
+            #hamicon {display: block;}
+            #close {display: block;}
+            a {border: 1px solid black;
+                display: block; /* a element changes links to block which makes them take up full width of the screen */
+            } 
+            #navlinks {display: none;}
+            .row {display: flex;
+                justify-content: space-between;
+            }
+        }
+
+
 
 /* header */
 
@@ -35,6 +74,7 @@
     #footer {background-color: #FF9BD2;}
     .footer {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
@@ -74,12 +114,29 @@
         border-radius: 5%;
     }
 
+    @media only screen and (max-width: 800px) {
+        .homesophie img {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
     /* this is the flexbox for the girls homepage click pics */
     .homeflex1 {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .homeflex1 div {flex: 1;}
+
+    @media only screen and (max-width: 800px) {
+        .homeflex1, .homeflex2 {
+            flex-direction: column;
+            flex-basis: 100%;
+            width: 100%;
+        }
+    }
+
     .homeflex1 img {
         display: block;
         margin-left: auto;
@@ -91,6 +148,7 @@
     .homeflex2 {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .homeflex2 div {flex: 1;}
     .homeflex2 img {
@@ -105,11 +163,6 @@
 /* FORMAT 1 */
 /* sophies page / allys page / dianas page */
 
-    .format1img {
-        float: left;
-        margin: 0px 20px 20px 20px;
-    }
-
     .clearfloat {clear: both;}
 
     .format1box {
@@ -123,56 +176,100 @@
     .format1facts {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
-    
-    /* justify-content: space-around; 
-    
-    .format1food, .format1obbies, .format1fact {
+
+    .food1, .fact1, .hobbie1 {
         flex: 1;
-        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 60px;
     }
-    
-    */
+
+    @media only screen and (max-width: 800px) {
+        .food1, .fact1, .hobbie1 {
+            flex-basis: 100%;
+        }
+    }
 
     .format1songs {
         display: flex;
         justify-content: space-around;
         margin: 20px 0px 20px 0px;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .song-fav {
+            width: 100%;
+        }
     }
 
     .format1info {
         display: flex;
         justify-content: space-around;
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0;
+        flex-wrap: wrap;
     }
 
     .format1films{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
-        margin: 20px 0px 20px 0px;
+    }
+
+    .format1tv, .format1movies {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .format1tv, .format1movies {
+            flex-basis: 100%;
+        }
     }
 
 
 /* FORMAT 2 */
 /* reenies page / kylies page / graces page */
 
-    .format2flex {
+    .format2flex { /* a flex-wrap: wrap; messes up the appearance when fullscreen!! fix that */
         display: flex;
-        margin: 0px 20px 0px 20px;
+        justify-content: space-around;
+        margin: 0px 20px;
     }
 
-    .format2abt {
+    @media only screen and (max-width: 800px) {
+        .format2flex {
+            flex-wrap: wrap;
+        }
+    }
+
+    .format2abt { /* fix the sixe of the flex contents */
         display: flex;
         justify-content: space-between;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 20px;
+        flex-wrap: wrap;
     }
 
     .format2food, .format2hobbies, .format2fact {
         flex: 1;
+        justify-content: space-around;
+        flex-wrap: wrap;
         padding: 5px;
     }
 
-    .format2box {
+    @media only screen and (max-width: 800px) {
+        .format2food, .format2hobbies, .format2fact {
+            flex-basis: 100%;
+            padding: 0px;
+        }
+    }
+
+    .format2box {/* add a <br> tag underneith all boxes on format 2 */
         background-color: #ffe4c4;
         border: 2px solid #c9238c;
         width: 60%;
@@ -180,34 +277,125 @@
         padding: 20px;
     }
 
-    .format2img {
-        float: left;
-        margin: 0px 20px 20px 20px;
+    @media only screen and (max-width: 800px) {
+        .slideshow-container2 {
+            float: none;
+            width: 50%;
+            margin: 0 auto;
+        }
     }
 
     .format2songs {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .song-fav {
+            width: 100%;
+        }
     }
 
     .format2films {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .format2info {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
 
 
+/* JAVASCRIPT CSS */
+
+    .slideshow-container {
+        float: left;
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .slideshow-container2 {
+        float: left;
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .mySlides {
+        display: none; /* hide all slides by default */
+        text-align: center;
+    }
+
+    .mySlides img {
+        width: 80%; /* adjust as needed */
+        margin-top: 20px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;   
+        top: 50%;
+        width: auto;
+        transform: translateY(-50%);
+        color: #310046;
+        font-weight: bold;
+    }
+
+    .prev {
+        left: 10px;
+        margin-left: 20px;
+    }
+
+    .next {
+        right: 10px;
+        margin-right: 750px;
+    }
+
+    .prev2, .next2 {
+        cursor: pointer;
+        position: absolute;   
+        top: 50%;
+        width: auto;
+        transform: translateY(-50%);
+        color: #310046;
+        font-weight: bold;
+    }
+
+    .prev2 {
+        left: 10px;
+        margin-left: 20px;
+        margin-top: 800px;
+    }
+
+    .next2 {
+        right: 10px;
+        margin-right: 750px;
+        margin-top: 800px;
+    }
 
 
+    @media only screen and (max-width: 800px) {
+        .prev, .next, .prev2, .next2 {
+            display: none;
+        }
+    }
 
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
 
-
-
+    .dot.active {
+        background-color: #717171;
+    }
 
 
 

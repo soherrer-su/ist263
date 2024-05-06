@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grace Burrows</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <style>
-        img {width: 30%;}
-    </style>
+    <script src="projectscript.js"></script>
 </head>
 <body>
     <header id="header">
@@ -76,23 +74,74 @@
                         <p>
                             Their dream career is working with health communication so that those who don't have as much knowledge about science are able to understand risks, best practices to keep themselves and others safe, and things like that!<br>
                             Grace is from Jackson, New Jersey. She is of white (Irish, German, Czech, Ukrainian) heritage and the most inspiring person in her life is her mom (“she's the best!”).
-                        </p>
+                        </p><br>
                 </div>
             </aside>
         </div>
     </main>
 
-    <img src="media/grace2.png" alt="grace on the pier" class="format2img">
+    <div class="slideshow-container">
+        <!-- slide 1 -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="media/grace3.png" alt="grace">
+        </div>
+
+        <!-- slide 2 -->
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="media/grace2.png" alt="grace">
+        </div>
+
+        <!-- slide 3 -->
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="media/grace.jpg" alt="grace">
+        </div>
+
+        <!-- slide 4 -->
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="media/grace4.png" alt="grace">
+        </div>
+
+        <!-- slide 5 -->
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="media/grace5.png" alt="grace">
+        </div>
+
+        <!-- slide 6 -->
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="media/grace6.png" alt="grace">
+        </div>
+        
+        <!-- clicking buttons -->
+        <a class="prev2" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next2" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- dots of images -->
+        <div style="text-align:center">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+            <span class="dot" onclick="setSlide(4)"></span>
+            <span class="dot" onclick="setSlide(5)"></span>
+        </div>
+    </div>
+
 
     <figure>
         <div class="format2songs">
             <div>
-                Favorite Song: All Night Longer - Sammy Adams<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/kOmvUVDeO0I?si=AApBvK6EfvMwukwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Favorite Song: <strong>All Night Longer - Sammy Adams</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/kOmvUVDeO0I?si=AApBvK6EfvMwukwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
             <div>
-                Go to Kareoke Song: Don't Stop Believing - Journey<br>
-                <iframe width="300" height="150" src="https://www.youtube.com/embed/1k8craCGpgs?si=G4ixywGGAfU2D3pU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Go to Karaoke Song: <strong>Don't Stop Believing - Journey</strong><br>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/1k8craCGpgs?si=G4ixywGGAfU2D3pU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-fav"></iframe>
             </div>
         </div>
     </figure>
@@ -125,8 +174,8 @@
 
         <div class="format2info">
             <div>
-                <p>
-                    What makes you happy? “Having a POSITIVE impact on people like making their day or facilitating some kind of event that makes them feel happy or less stressed or whatever they might need!”<br> 
+                <p class="textcenter">
+                    <strong>What makes you happy?</strong> “Having a POSITIVE impact on people like making their day or facilitating some kind of event that makes them feel happy or less stressed or whatever they might need!”<br> 
 
                     Grace's favorite childhood memory is how it felt waking up to have a slow morning on a weekend with my family all there! Especially in the spring or fall when it was crisp outside.<br>
 
