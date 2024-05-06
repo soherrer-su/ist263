@@ -309,7 +309,9 @@
         flex-wrap: wrap;
     }
 
-
+    img {
+        width: 30%;
+    }
 
 /* JAVASCRIPT CSS */
 
